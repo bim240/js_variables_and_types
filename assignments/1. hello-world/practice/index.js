@@ -21,3 +21,29 @@
 var city = "Dharamshala";
 var country = "India";
 // Alert the above variable like "Dharamshala, India";
+
+// Challenge 1
+console.log("I'm learning Javascript");
+
+
+// Challenge 2
+let admin,name;
+name = "john";
+admin = "admin";
+alert(admin);
+
+// Challenge 3
+alert("Hello World");
+
+
+// Challenge 4
+let personName = prompt("enter your name");
+alert("Welcome "+ personName );
+
+// Challenge 5
+let UserInput = prompt("Enter a string ");
+alert(UserInput.length);
+
+// Challenge 6
+
+alert(city+", "+country);
