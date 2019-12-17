@@ -28,6 +28,7 @@ for(let i=1;i<=20;i++)
 }
 
 3. 🎖Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result in console (e.g. "2 * 9 = 18").
+
 for(let i=1;i<=10;i++){
     console.log(i*9);
 }
@@ -48,17 +49,25 @@ for(let i=1;i<=10;i++){
 ```js
 // 1, 2, 3, 4, 5
 // 6, 7, 8, 9, 10
-var line;
+
+var line="";
 for(let i=1;i<=10;i++){
-    if(i<=5)
+    if(i<5)
     line += i + ", ";
-    else if (i==5)
-        console.log(line)
-        line=null;
-    else
-      line += i + ", ";
+    else if (i==5){
+    	line+=""+i
+        console.log(line);
+        line="";
+    }
+     else if(i<10)
+    line += i + ", ";
+    else if (i==10){
+    	line+=""+i
+        console.log(line);
+    }
 }
-console.log(line);
+
+
 
 6. 🎖Use a while loop to add up the numbers 1 to 20.
 for(let i=1;i<=20;i++){
