@@ -6,6 +6,7 @@
  * [ ] Write a function called calculateTax which takes an argument 'amount' and calculates the tax you need to pay.
  * [ ] Write a function named formatAmount which returns you amount in this format '$ 132.45' make the decimal fixed to 2 places.
 ```js
+
 const SPENDING_THRESHOLD = 200;
 const TAX_RATE = 0.08;
 const PHONE_PRICE = 99.99;
@@ -13,8 +14,24 @@ const ACCESSORY_PRICE = 9.99;
 
 var bank_balance = 303.91;
 var amount = 0;
-// your code goes here
-```
+for(amount=0;amount<bank_balance; ){
+	amount+=PHONE_PRICE;
+	if(amount<SPENDING_THRESHOLD)
+		amount+=ACCESSORY_PRICE;
+	console.log(amount);
+
+}
+amount = amount+calculateTax(amount);
+console.log (formatAmount(amount));
+
+function calculateTax (amount,tax=.08){
+	return amount*tax;
+
+}
+
+function formatAmount (amount){
+	return "$ "+amount.toFixed(2);
+}
  ⛑ Answer of the above will `$334.76`.
 
 2. 🎖 Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen using `alert` (e.g. "2 is even").
